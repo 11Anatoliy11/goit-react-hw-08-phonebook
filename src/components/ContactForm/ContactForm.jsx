@@ -29,6 +29,7 @@ export const ContactForm = () => {
       setName(value);
     }
     if (name === 'number') {
+      // eslint-disable-next-line
       const reg = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
       if (!reg.test(value)) {
         return;
